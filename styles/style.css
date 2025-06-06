@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*==========CSS RESET============*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*==========ROOT VARIABLE============*/
+:root {
+    /* Kleuren */
+    --color-purple: #5722CD;
+    --color-blue: #4845E4;
+    --color-pink: #ED4385;
+    --color-black: #0C0C0C; /* Standaard tekst */
+    --color-light-purple: #F2F0FF; /* Grote zwevende woorden */
+    --color-light-gray: #F3F6F9; /* Achtergrond van projecten */
+    --color-gray: #7A7A7A; /* Service-tegel tekst */
+
+    /* FONTS */
+    --font-heading: 'Merriweather', serif;
+    --font-body: 'Roboto', sans-serif;
+
+    /*FONTS SIZE*/
+    --font-size-h1: 32px;
+    --font-size-h2: 16px;
+    --font-size-h3: 14px;
+    --font-size-h4: 12px;
+    --font-size-p: 16px;
+
+
+}
+
+/*GLOBAL SETTINGS*/
+body {
+    font: var(--font-body);
+    color: var(--color-black);
+    background-color: white;
+}
+
+/* HEADER MET BACKGROUND */
+.container-header {
+    border: 2px dashed lightgray;
+    height: 700px;
+    background-image: linear-gradient(to left, #5722CD, #4845E4);
+}
+
+/*  NAVIGATIEBALK  */
+
+.nav-bar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: transparent;
+    border: 2px dashed red;
+
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+    font-family: 'Merriweather', serif;
+
+}
+
+.nav-bar ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0 30px 0 0;
+
+}
+
+
+
