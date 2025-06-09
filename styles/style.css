@@ -24,8 +24,6 @@
     --font-body: 'Roboto', sans-serif;
 
 
-
-
 }
 
 /* Algemene reset of basisinstellingen */
@@ -112,12 +110,12 @@ p {
     gap: 25px;
 }
 
-.hero-container h1{
+.hero-container h1 {
     font-size: 3rem;
     color: white;
 }
 
-.hero-container p{
+.hero-container p {
     font-size: 1.5rem;
     color: white
 }
@@ -140,12 +138,10 @@ p {
 /*MAIN*/
 
 .main-container {
-
-    padding: 30px 0 30px 0;
-    border: 2px dashed red;
+    margin: 80px 0;
     overflow: hidden;
     flex-basis: 1200px;
-
+    border: 2px dashed black;
 }
 
 .main-hello-container {
@@ -154,8 +150,9 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    height: 400px;
+    gap: 25px;
+    height: 500px;
+
 }
 
 .main-h2 {
@@ -163,66 +160,39 @@ p {
     text-align: center;
     align-items: center;
     color: var(--color-purple);
+    border: 2px dashed orange;
+
 
 }
 
+.main-p {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    color: var(--color-black);
+}
+
 .content::before {
-    content: "HELLO";
+    content: "hello";
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    font-size: 15rem;
+    font-size: 25rem;
     color: var(--color-light-purple);
     font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+.hero-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
 /*PROJECTEN*/
 
-.main-work-container{
-    background-color: var(--color-light-gray);
-
-}
-.content-work:nth-child(even){
-    flex-direction: row-reverse;
-}
-
-.content-work{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    border: 2px solid red;
-    flex-wrap: wrap;
-
-}
-
-.text-work{
-
-    border: 2px solid red;
-    padding: 10px 40px;
-    margin-left: 40px;
-    margin-right: 40px;
-    flex: 1 1 400px;
-
-}
-
-.image-wrapper{
-    flex-basis: 600px;
-    flex-shrink: 1;
-    border: 1px solid red;
-
-}
-.image-wrapper img{
-    max-width: 100%;
-    box-shadow: #3a3939 -1px 4px 20px 2px;
-    height: auto;
-}
 
 
 
