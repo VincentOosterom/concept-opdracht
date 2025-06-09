@@ -23,33 +23,54 @@
     --font-heading: 'Merriweather', serif;
     --font-body: 'Roboto', sans-serif;
 
-    /*FONTS SIZE*/
-    --font-size-h1: 48px;
-    --font-size-h2: 32px;
-    --font-size-h3: 18px;
-    --font-size-h4: 16px;
-    --font-size-p: 16px;
+
 
 
 }
 
-/*GLOBAL SETTINGS*/
+/* Algemene reset of basisinstellingen */
+
 body {
-    font: var(--font-body);
-    color: var(--color-black);
-    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
 }
-h1{
-    font-size: var(--font-size-h1);
-    color: white;
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    line-height: 1.2;
 }
+
+
+p {
+    margin-bottom: 1em;
+}
+
 
 /* HEADER MET BACKGROUND */
 .container-header {
+    position: relative;
     border: 2px dashed lightgray;
-    height: 700px;
-    background-image: linear-gradient(to left, #5722CD, #4845E4);
+    height: auto;
+    background-image: linear-gradient(164deg, rgba(72, 69, 228, 1) 0%, rgba(87, 34, 205, 1) 69%);
+    padding: 0 20px
 }
+
+
+.break {
+    display: block;
+    text-align: center;
+}
+
 
 /*  NAVIGATIEBALK  */
 
@@ -58,55 +79,154 @@ h1{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-color: transparent;
-    border: 2px dashed red;
-
 }
 
 .nav-bar li a {
+
     text-decoration: none;
-    margin-right: 20px;
     color: white;
-    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', serif;
 
 }
 
 .nav-bar ul {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
     display: flex;
-    gap: 24px;
+    gap: 40px;
     list-style: none;
     padding: 0;
-    margin: 0 30px 0 0;
+    margin: 20px 100px 0 0;
 
 }
 
-/*HEADER CONTENT*/
+/*HERO CONTENT*/
 
 .hero-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 400px;
-    border: 5px solid black;
-    gap: 20px;
+    padding: 100px;
+    gap: 25px;
 }
 
-.hero-container p {
+.hero-container h1{
+    font-size: 3rem;
     color: white;
-    font: var(--font-body);
-    font-size: var(--font-size-h2);
 }
+
+.hero-container p{
+    font-size: 1.5rem;
+    color: white
+}
+
 
 .hero-container button {
     border: none;
     color: white;
+    font-weight: lighter;
     background-color: #ED4385;
     border-radius: 30px;
-    font-size: 20px;
-    padding: 15px 32px;
+    font-size: 15px;
+    padding: 20px 30px 20px 30px;
+    box-shadow: #3a3939 -1px 4px 20px 2px;
+    text-transform: uppercase;
+
 
 }
+
+/*MAIN*/
+
+.main-container {
+
+    padding: 30px 0 30px 0;
+    border: 2px dashed red;
+    overflow: hidden;
+    flex-basis: 1200px;
+
+}
+
+.main-hello-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 400px;
+}
+
+.main-h2 {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    color: var(--color-purple);
+
+}
+
+.content::before {
+    content: "HELLO";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 15rem;
+    color: var(--color-light-purple);
+    font-family: "Roboto", sans-serif;
+
+}
+
+/*PROJECTEN*/
+
+.main-work-container{
+    background-color: var(--color-light-gray);
+
+}
+.content-work:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.content-work{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    border: 2px solid red;
+    flex-wrap: wrap;
+
+}
+
+.text-work{
+
+    border: 2px solid red;
+    padding: 10px 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    flex: 1 1 400px;
+
+}
+
+.image-wrapper{
+    flex-basis: 600px;
+    flex-shrink: 1;
+    border: 1px solid red;
+
+}
+.image-wrapper img{
+    max-width: 100%;
+    box-shadow: #3a3939 -1px 4px 20px 2px;
+    height: auto;
+}
+
+
+
+
 
 
 
