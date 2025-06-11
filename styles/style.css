@@ -53,11 +53,19 @@ p {
     margin-bottom: 1em;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 /* HEADER MET BACKGROUND */
 .container-header {
     position: relative;
-    border: 2px dashed lightgray;
+
     height: auto;
     background-image: linear-gradient(164deg, rgba(72, 69, 228, 1) 0%, rgba(87, 34, 205, 1) 69%);
     padding: 0 20px
@@ -108,6 +116,7 @@ p {
     flex-direction: column;
     padding: 100px;
     gap: 25px;
+
 }
 
 .hero-container h1 {
@@ -141,7 +150,7 @@ p {
     margin: 80px 0;
     overflow: hidden;
     flex-basis: 1200px;
-    border: 2px dashed black;
+
 }
 
 .main-hello-container {
@@ -160,7 +169,6 @@ p {
     text-align: center;
     align-items: center;
     color: var(--color-purple);
-    border: 2px dashed orange;
 
 
 }
@@ -184,7 +192,8 @@ p {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
 }
-.hero-image{
+
+.hero-image {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -193,10 +202,120 @@ p {
 
 /*PROJECTEN*/
 
+/*CONTAINER ZELF*/
+.project-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: var(--color-light-gray);
+    min-height: 100vh;
+}
+
+/*WORK OP ACHTERGROND*/
+.content-work::before {
+    content: "work";
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-size: 50rem;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+
+/*Rolling Stone*/
+.project-containers {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    justify-content: space-evenly;
+
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 450px;
+
+}
+
+/*ROW-REVERSE*/
+.project-containers:nth-child(even) {
+    flex-direction: row-reverse;
+
+}
 
 
+.rolling-stone-content {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    max-width: 300px;
+    justify-content: center;
 
 
+}
+
+.rolling-stone-content img {
+    width: 80px;
+    padding-bottom: 20px;
+}
+
+.rolling-stone-content p {
+    padding: 20px 0;
+}
+
+.rolling-stone-image {
+    max-width: 100%;
+    box-shadow: #b4a9a9 0 5px 20px 0;
+
+}
+
+/*Variety*/
+
+.project-containers {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+}
+
+.variety-content {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    max-width: 300px;
+    margin-left: -300px;
+    justify-content: center;
+
+}
+
+.variety-content img {
+    width: 80px;
+    padding-bottom: 20px;
+
+}
+
+.variety-content p {
+    padding: 20px 0;
+}
+
+.variety-image {
+    height: 400px;
+    max-width: 100%;
+    box-shadow: #b4a9a9 0 5px 20px 0;
+}
 
 
+/*MEDIA*/
 
+@media (max-width: 764px) {
+    .hero-container {
+        text-align: center;
+
+    }
+}
