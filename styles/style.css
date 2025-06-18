@@ -184,7 +184,6 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     font-size: 25rem;
     color: var(--color-light-purple);
     font-family: "Roboto", sans-serif;
@@ -228,7 +227,7 @@ a:hover {
 .projects {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
     margin-top: 450px;
 
 
@@ -245,6 +244,7 @@ a:hover {
     flex-shrink: 3;
     flex-grow: 0;
     flex-basis: 800px;
+    padding: 0.75rem;
 
 }
 
@@ -417,12 +417,12 @@ a:hover {
 
 .form-content h2 {
 
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: white;
 }
 
 .form-content p {
-    font-size: 0.75rem;
+    font-size: 1rem;
     color: white;
     font-weight: lighter;
 }
@@ -494,5 +494,92 @@ a:hover {
 }
 
 /*MEDIA*/
+
+@media screen and (max-width: 768px) {
+    /*HERO*/
+    .hero-container {
+        text-align: center;
+    }
+    .hero-container h1 {
+        font-size: 2.6rem;
+    }
+    .hero-container p {
+        font-size: 1rem;
+    }
+
+    /*NAV */
+    .nav-bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .nav-bar ul {
+            margin: 25px 0 auto;
+            text-align: center;
+            max-width: 400px;
+        }
+
+    }
+
+
+    /*FORM*/
+    .form-container {
+        padding: 1.5rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+
+
+/*ALLE ZWEVENDE TEKST OP KLEINER SCHERMEN*/
+    .content::before {
+        content: "hello";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 15rem;
+        color: var(--color-light-purple);
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+    }
+    .content-services::before {
+        content: "services";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 9rem;
+        color: var(--color-light-purple);
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+    }
+    .content-work::before {
+        content: "work";
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 30rem;
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+    }
+    /*PROJECT*/
+
+    .projects{
+        margin-top: 80px;
+    }
+
+
+
+}
 
 
